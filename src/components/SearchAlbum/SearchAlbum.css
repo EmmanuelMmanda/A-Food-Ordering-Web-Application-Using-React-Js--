@@ -1,0 +1,24 @@
+.Search_Album,.Search {
+    color: rgb(32, 32, 32);
+    padding: 10px;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+.Search_Album .Search {
+    background-color: #eee;
+    border-radius: 40px;
+    width: 300px;
+    font-size: 1.1rem;
+}
+.Search_Album input{
+    color: black;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 17px;
+
+}
+
+

@@ -1,0 +1,32 @@
+.Album__card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgb(207, 206, 206);
+        width: 300px;
+        background-color: rgb(228, 225, 225);
+        box-shadow: 2px 2px 6px rgb(182, 172, 172);
+}
+.Album__card .Album__img {
+        width: 100%;
+        height: fit-content;
+        object-fit: cover;
+}
+
+.Album__card .Album__description {
+    text-align: left;
+    padding: 10px;
+}
+.Album__card .Album__description h3,p{
+    margin: 0;
+    padding: 2px;
+}
+.Album__card .Album__description>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+
+    .Album__card .Album__description>div i {
+        font-size: 1.6rem;
+        color: royalblue;
+    }
