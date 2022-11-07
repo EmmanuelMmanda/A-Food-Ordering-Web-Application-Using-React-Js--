@@ -1,16 +1,26 @@
 import React from "react";
 import "./SearchAlbum.css";
 
-const SearchAlbum = () => {
-  
+const SearchAlbum = (props) => {  
+ 
+  const inputHandler = (event) => {
+    event.preventDefault();
+    // console.log(event.target.value);
+    props.onformSubmit(event.target.value);
 
+  };
+
+  
   return (
     <div className="Search_Album">
       <div className="Search">
-        <i class="bx bx-search"></i>
-        <form>
-          <input type="text" placeholder="Search Album or Artist" />
-        </form>
+        <i className="bx bx-search"></i>
+          <input
+            type="text"
+            name="input"
+            onChange={inputHandler}
+            placeholder="Search Album or Artist"
+          />
       </div>
     </div>
   );
