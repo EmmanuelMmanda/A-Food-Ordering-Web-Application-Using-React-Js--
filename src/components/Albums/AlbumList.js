@@ -7,10 +7,10 @@ const AlbumList = (props) => {
 
   const filteredAlbums = AlbumsData.filter((item) => {
     const i =
-      item.singer.toLowerCase().toString() ||
-      item.title.toLowerCase().toString() ||
-      item.desc.toLowerCase().toString()
-    return i.includes(inputFilter);
+      item.singer.toLowerCase().toString().includes(inputFilter) ||
+      item.desc.toLowerCase().toString().includes(inputFilter) ||
+      item.title.toLowerCase().toString().includes(inputFilter);
+      return i;
   });
 
 
