@@ -12,7 +12,7 @@ const MealActions = () => {
           type: "number",
           min: "1",
           max: "5",
-          step: "1",
+          step: "1",  
         }}
       />
       <button className={styles.addCard}>
