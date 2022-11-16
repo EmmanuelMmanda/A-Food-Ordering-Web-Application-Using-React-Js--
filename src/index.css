@@ -1,11 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --background-Color: rgb(237, 235, 235);
+  --Header-Color: rgba(255, 255, 255, 0.499); 
+  --link-Color: rgb(178, 40, 40);
+  --Color: rgb(37, 34, 34);
+  --border-Color: rgb(225, 208, 208);
+  --black-Fade: rgba(63, 62, 62, 0.226);
+  --white-Fade: rgba(255, 255, 255, 0.56);
+  --background-Fade: rgba(238, 238, 238, 0.668);
+}
+
+html {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-size: 18px;
+}
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 17px;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Encode Sans Condensed', sans-serif;
-  font-weight: 400;
+  color: var(--Color);
+  background-color: var(--background-Color);
+  padding-bottom: 200px;
+
 }

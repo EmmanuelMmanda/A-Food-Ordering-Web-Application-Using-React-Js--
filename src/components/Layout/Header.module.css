@@ -1,0 +1,89 @@
+.HeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 0;
+  background-color: var(--Header-Color);
+  box-shadow: 2px 1px 2px var(--black-Fade) ;
+  position: sticky  ;
+  top: 0;
+  z-index: 10;
+}
+
+.HeaderContainer .HeaderLogo {
+  display: inline;
+  font-size: 1.8rem;
+}
+
+.HeaderContainer .HeaderLogo:nth-child(1),
+.HeaderContainer .HeaderLogo:nth-child(3) {
+  color: var(--Color);
+}
+.HeaderContainer .HeaderLogo span:nth-child(1){
+  font-size: 2rem;
+  line-height: 1.1rem;
+}
+
+.HeaderContainer .HeaderLogo span:nth-child(2) {
+  color: var(--link-Color);
+}
+/* Secon section Header with image and description */
+
+.imageFrame {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.imageFrame .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: unscaling 2s  ease-in-out;
+}
+.imageFrame .image img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  animation: scaling 1s ease-in;
+}
+.imageFrame .image {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 2px 20px 50px var(--black-Fade);
+}
+.imageFrame .desc {
+  max-width: 500px;
+  position: absolute;
+  background-color: var(--white-Fade);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: .81rem;
+  transform: translateY(80%);
+  text-align: center;
+} 
+
+@keyframes scaling {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes unscaling {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+
+  }
+}

@@ -1,25 +1,16 @@
-import { useState } from "react";
-import "./App.css";
-import AlbumList from "./components/Albums/AlbumList";
-import SearchAlbum from "./components/SearchAlbum/SearchAlbum";
-import DUMMY_DATA from "./DUMMY_DATA";
+import { Fragment } from "react";
+import Header from "./components/Layout/Header";
+import Meals from "./components/Meals/Meals";
 
-const App = () => {
-  const [input, setinput] = useState("");
-
-  const formHandler = (formdata) => {
-      setinput(formdata);
-  };
-
-
+function App() {
   return (
-    <div className="App">
-      <h2>React Js Render Dynamic Lists</h2>
-      <SearchAlbum onformSubmit={formHandler} />
-      <h2>- Albums -</h2>
-      <AlbumList albums={DUMMY_DATA} onfilter={input} />
-    </div>
+    <Fragment>
+      <Header />
+      <main>
+        <Meals />
+      </main>
+    </Fragment>
   );
-};
+}
 
 export default App;
