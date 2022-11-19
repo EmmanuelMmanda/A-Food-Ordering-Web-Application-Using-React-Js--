@@ -1,5 +1,5 @@
 .Meal {
-    width: 220px;
+    max-width: 300px;
     height: 295px;
     box-shadow: 2px 3px 10px rgba(104, 100, 100, 0.66);
     background-color: var(--Header-Color);
@@ -12,7 +12,7 @@
     overflow: hidden;
     display: flex;
     object-fit: cover;
-    height: 150px;
+    height: 155px;
   }
   
   .Meal .mealImage img:hover {

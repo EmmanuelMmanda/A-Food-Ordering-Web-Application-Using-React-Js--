@@ -44,7 +44,6 @@ const cartReducer = (state, action) => {
       return item.id !== action.id;
     });
     console.log("updated items ", updatedItems);
-    console.log(state.totalAmount, "-", action.price ,"*" ,action.amount);
     return {
       items: updatedItems,
       totalAmount: state.totalAmount - +action.price * +action.amount,
@@ -64,7 +63,6 @@ const CartProvider = (props) => {
   };
 
   const removeItemFromCart = (id, price, amount) => {
-    console.log(amount);
     cartDispatch({
       type: "REMOVE",
       id: id,

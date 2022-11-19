@@ -7,13 +7,12 @@ import { useContext } from "react";
 const Cart = (props) => {
   const ctx = useContext(CartContext);
 
-  console.log("context at cart js",ctx);
 
   const hasItems = ctx.items.length > 0;
   const totalAmount = ctx.totalAmount;
 
   const removeCartItemHandler = (id, price, amount) => {
-    ctx.removeFromCart(id, price,amount);
+    ctx.removeFromCart(id, price, amount);
   };
 
   return (
@@ -23,7 +22,17 @@ const Cart = (props) => {
       onAccept={props.onAccept}
       onClose={props.onClose}
     >
-      <div>
+      <div
+        style={{
+          overflow: "scroll",
+          height: "300px",
+          overflowX: "hidden",
+          padding: 5,
+          scrollbarWidth: "thin",
+          scrollbarColor: "var(--link-color)",
+          MozScrollbarColor: "var(--link-color)",
+        }}
+      >
         {ctx.items.map((item) => (
           <div className={styles.cart_item} key={item.id}>
             <div className={styles.cart_Image}>
@@ -36,7 +45,12 @@ const Cart = (props) => {
             </div>
             <i
               className={`bx bx-trash trash ${styles["trashIcon"]}`}
-              onClick={removeCartItemHandler.bind(null, item.id,item.price,item.amount)}
+              onClick={removeCartItemHandler.bind(
+                null,
+                item.id,
+                item.price,
+                item.amount
+              )}
             ></i>
           </div>
         ))}

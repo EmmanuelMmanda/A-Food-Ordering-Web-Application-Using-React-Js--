@@ -8,6 +8,9 @@
     align-items: center;
     gap: 10px;
 }
+.cartButton span:nth-child(1){
+    font-size: 1.3rem;   
+}
 .cartButton span:nth-child(3){
     border-radius: 50%;
     color: var(--link-Color); 
@@ -17,4 +20,14 @@
 .cartButton:hover {
     background-color: var(--Color);
     color: var(--white-Fade);
+}
+
+@media screen and (max-width: 400px) {
+ .cartButton {
+    transform: scale(.9);
+ }
+ .cartButton span:nth-child(2){
+    display: none;
+ }
+  
 }

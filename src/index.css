@@ -3,7 +3,7 @@
 }
 :root {
   --background-Color: rgb(237, 235, 235);
-  --Header-Color: rgba(255, 255, 255, 0.499); 
+  --Header-Color: rgba(255, 255, 255, 0.914); 
   --link-Color: rgb(178, 40, 40);
   --Color: rgb(37, 34, 34);
   --border-Color: rgb(115, 112, 112);
@@ -30,3 +30,4 @@ body {
   padding-bottom: 200px;
   position: relative;
 }
+
