@@ -25,7 +25,7 @@ const Cart = (props) => {
       <div
         style={{
           overflow: "scroll",
-          height: "300px",
+          maxHeight: "300px",
           overflowX: "hidden",
           padding: 5,
           scrollbarWidth: "thin",
