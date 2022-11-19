@@ -40,10 +40,14 @@ const cartReducer = (state, action) => {
 
   if (action.type === "REMOVE") {
     let updatedItems;
-    updatedItems = state.items.filter((item) => item.id !== action.id);
-    console.log(updatedItems);
+    updatedItems = state.items.filter((item) => {
+      return item.id !== action.id;
+    });
+    console.log("updated items ", updatedItems);
+    console.log(state.totalAmount, "-", action.price ,"*" ,action.amount);
     return {
       items: updatedItems,
+      totalAmount: state.totalAmount - +action.price * +action.amount,
     };
   }
   return initialState;
@@ -59,10 +63,13 @@ const CartProvider = (props) => {
     });
   };
 
-  const removeItemFromCart = (id) => {
+  const removeItemFromCart = (id, price, amount) => {
+    console.log(amount);
     cartDispatch({
       type: "REMOVE",
       id: id,
+      price: price,
+      amount: amount,
     });
   };
 

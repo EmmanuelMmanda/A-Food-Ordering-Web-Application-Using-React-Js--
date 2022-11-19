@@ -7,16 +7,14 @@ import { useContext } from "react";
 const Cart = (props) => {
   const ctx = useContext(CartContext);
 
-  console.log(ctx); 
+  console.log("context at cart js",ctx);
 
   const hasItems = ctx.items.length > 0;
   const totalAmount = ctx.totalAmount;
-  
 
-
- const removeCartItemHandler = (id,amount)=>{
-    ctx.removeFromCart(id);
- }
+  const removeCartItemHandler = (id, price, amount) => {
+    ctx.removeFromCart(id, price,amount);
+  };
 
   return (
     <Modal
@@ -36,7 +34,10 @@ const Cart = (props) => {
               <span>Amount: {item.amount}</span>
               <span>Tsh {item.price}</span>
             </div>
-          <i className={`bx bx-trash trash ${styles["trashIcon"]}`} onClick={removeCartItemHandler.bind(null,item.id)}></i>
+            <i
+              className={`bx bx-trash trash ${styles["trashIcon"]}`}
+              onClick={removeCartItemHandler.bind(null, item.id,item.price,item.amount)}
+            ></i>
           </div>
         ))}
         {!hasItems && <p style={{ textAlign: "center" }}> No items in Cart</p>}
