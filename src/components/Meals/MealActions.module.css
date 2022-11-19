@@ -4,6 +4,8 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+
 }
 .mealActions button {
     border: 1px solid var(--black-Fade);
@@ -17,7 +19,13 @@
     background-color: rgba(208, 151, 151, 0.543);
 }
 
-.mealActions span {
-    color: var(--Color);
+.mealActions .inputNumber {
+    width: 50px;
+    text-align: center;
     font-size: 1.1rem;
+    color: var(--link-Color);
+    background-color: transparent;
+    border: 1px solid var(--black-Fade);
+    cursor: pointer;
+
 }

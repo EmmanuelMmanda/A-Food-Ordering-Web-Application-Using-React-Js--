@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 import HeaderCartButton from "./HeaderCartButton";
 import Foodies from "../../Assets/foody-Header.jpg";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <Fragment>
       <div className={styles.HeaderContainer}>
@@ -12,7 +12,7 @@ const Header = () => {
           <span>oo</span>
           <span>dy</span>
         </div>
-        <HeaderCartButton />
+        <HeaderCartButton ShowCart={props.onShowCart} />
       </div>
       <div className={styles.imageFrame}>
         <div className={styles.image}>

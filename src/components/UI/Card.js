@@ -14,7 +14,7 @@ const CardItem = {
   justifyContent: "center",
   alignItems: "center",
   marginTop: "20px",
-  gap: "4rem",
+  gap: "2.5rem",
 };
 
 const Card = (props) => {

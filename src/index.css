@@ -6,10 +6,14 @@
   --Header-Color: rgba(255, 255, 255, 0.499); 
   --link-Color: rgb(178, 40, 40);
   --Color: rgb(37, 34, 34);
-  --border-Color: rgb(225, 208, 208);
+  --border-Color: rgb(115, 112, 112);
   --black-Fade: rgba(63, 62, 62, 0.226);
   --white-Fade: rgba(255, 255, 255, 0.56);
   --background-Fade: rgba(238, 238, 238, 0.668);
+  --backdrop: rgba(0, 0, 0, 0.774);
+  --Modal: rgba(244, 244, 244, 0.915);
+  --greenAccent: rgba(35, 121, 35, 0.899);
+  --redAccent: rgba(187, 39, 39, 0.881);
 }
 
 html {
@@ -24,5 +28,5 @@ body {
   color: var(--Color);
   background-color: var(--background-Color);
   padding-bottom: 200px;
-
+  position: relative;
 }

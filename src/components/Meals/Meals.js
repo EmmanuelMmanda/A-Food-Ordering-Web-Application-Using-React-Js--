@@ -6,7 +6,7 @@ import AvailableMeals from "./AvailableMeals";
 const Meals = () => {
   return (
         <Card>
-            <AvailableMeals/>
+            <AvailableMeals />
         </Card>
   )
 }

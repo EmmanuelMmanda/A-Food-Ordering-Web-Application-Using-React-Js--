@@ -14,7 +14,7 @@ const DUMMY_MEALS = [
   {
     id: 3,
     img: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/11/25/0/FNK_pan-seared-salmon-with-kale-apple-salad_s4x3.jpg.rend.hgtvcom.441.331.suffix/1387918756116.jpeg",
-    desc: "Fried meet with Salads",
+    desc: "Fried meet with Gren Salads",
     price: 3500,
   },
   {

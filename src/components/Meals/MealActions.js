@@ -1,18 +1,29 @@
-import React from "react";
 import Input from "../UI/Input";
 import styles from "./MealActions.module.css";
+import { useRef } from "react";
 
-const MealActions = () => {
+const MealActions = (props) => {
+  const inputRef = useRef();
+
+  const submithandler = (e) => {
+     e.preventDefault();
+    const  mealAmount = inputRef.current.value;
+    props.onAddCart(mealAmount)
+  };
+
   return (
-    <form className={styles.mealActions}>
+    <form className={styles.mealActions} onSubmit={submithandler}>
       <Input
         label="Amount"
+        ClassName={styles.inputNumber}
+        ref={inputRef}
         input={{
-          id: 1,
+          id: "amound-Input",
           type: "number",
-          min: "1",
-          max: "5",
-          step: "1",  
+          min: 1,
+          max: 5,
+          step: 1,
+          defaultValue: 1,
         }}
       />
       <button className={styles.addCard}>
