@@ -1,4 +1,4 @@
-## Food Ordering App Using Reat - Hooks, Context , State and Props used.
+## Food Ordering App Using React - Hooks, Context , State and Props used.
 
 <img src="./src/Assets/food order.png" width="100%"/>
 </br>
