@@ -1,8 +1,8 @@
 ## Food Ordering App Using Reat - Hooks, Context , State and Props used.
 
-<img src="./Assets/food order.png" width="100%"/>
+<img src="./src/Assets/food order.png" width="100%"/>
 </br>
-<img src="./Assets/cart.png" width="100%"/>
+<img src="./src/Assets/cart.png" width="100%"/>
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
