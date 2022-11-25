@@ -11,7 +11,7 @@ const AvailableMeals = () => {
   //   for (const meal of meals) {
   //     try {
   //       const request = await fetch(
-  //         "https://hourlycodes-default-rtdb.firebaseio.com/meals.json",
+  //         "https://foody-84852-default-rtdb.firebaseio.com/meals.json",
   //         {
   //           method: "POST",
   //           body: JSON.stringify(meal),
