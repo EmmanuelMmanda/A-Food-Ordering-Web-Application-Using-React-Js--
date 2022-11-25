@@ -51,22 +51,22 @@ const Cart = (props) => {
       );
       console.log(request);
       if (!request.ok) {
-        console.log("an error has occured", request.statusText);
         throw new Error("An Error has Occured");
       }
     } catch (error) {
       setErrors(error.message);
     }
-    setTimeout((timer) => {
+    setTimeout(() => {
       setorderStatus(
         "Order Succesfully Received, We will Contact you for Your Delivery"
       );
-      clearTimeout(timer);
-    }, 4000);
+    }, 3000);
 
-    console.log("reseting cart items");
     resetCartitemsHandler();
-    console.log("reseting complete");
+
+    setTimeout(() => {
+      setorderStatus("Done!");
+    }, 4000);
   };
 
   return (
@@ -75,11 +75,10 @@ const Cart = (props) => {
         title="Your Cart Items"
         AcceptText={hasItems && !isLoading && !showContactForm ? "Order" : ""}
         onAccept={AcceptCartHandler}
-        // onAccept={props.onAccept.bind(null, ctx.items)}
         onClose={props.onClose}
       >
         {isLoading && !errors ? (
-          <Spinner spinnertext={orderStatus} />
+          <Spinner spinnertext={orderStatus} isDone={orderStatus} />
         ) : (
           <div
             style={{

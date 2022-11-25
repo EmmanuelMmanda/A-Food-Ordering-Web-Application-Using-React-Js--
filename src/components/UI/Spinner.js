@@ -1,9 +1,18 @@
 import styles from "./Spinner.module.css";
 const Spinner = (props) => {
-  return <div className={styles.Spinner}>
-    <div id="loading" className={styles.loading}></div>
-    {props.spinnertext}
-  </div>;
+  console.log(props.isDone);
+
+  return (
+    <div className={styles.Spinner}>
+      {props.isDone === "Done!" && <span>{props.spinnertext}</span>}
+      {props.isDone !== "Done!" && (
+        <>
+          <div id="loading" className={styles.loading}></div>
+          <span>{props.spinnertext}</span>
+        </>
+      )}
+    </div>
+  );
 };
 
 export default Spinner;
