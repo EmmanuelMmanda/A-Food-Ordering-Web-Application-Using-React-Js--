@@ -40,7 +40,7 @@ const Cart = (props) => {
     };
     try {
       const request = await fetch(
-        "https://hourlycodes-default-rtdb.firebaseio.com/orders.json",
+        "https://foody-84852-default-rtdb.firebaseio.com/orders.json",
         {
           method: "POST",
           body: JSON.stringify(orderDetails),

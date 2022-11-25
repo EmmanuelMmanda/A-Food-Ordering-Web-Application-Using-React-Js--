@@ -36,7 +36,7 @@ const AvailableMeals = () => {
     setisLoading(true);
     try {
       const response = await fetch(
-        "https://hourlycodes-default-rtdb.firebaseio.com/meals.json"
+        "https://foody-84852-default-rtdb.firebaseio.com/meals.json"
       );
 
       if (!response.ok) {
