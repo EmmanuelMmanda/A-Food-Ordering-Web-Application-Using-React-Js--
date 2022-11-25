@@ -1,0 +1,31 @@
+.mealActions{
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.mealActions button {
+    border: 1px solid var(--black-Fade);
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: var(--link-Color);
+}
+.mealActions button:active{
+    background-color: rgba(208, 151, 151, 0.543);
+}
+
+.mealActions .inputNumber {
+    width: 50px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--link-Color);
+    background-color: transparent;
+    border: 1px solid var(--black-Fade);
+    cursor: pointer;
+
+}

@@ -6,7 +6,7 @@
   --Header-Color: rgba(255, 255, 255, 0.914); 
   --link-Color: rgb(178, 40, 40);
   --Color: rgb(37, 34, 34);
-  --border-Color: rgb(115, 112, 112);
+  --border-Color: rgb(182, 180, 180);
   --black-Fade: rgba(63, 62, 62, 0.226);
   --white-Fade: rgba(255, 255, 255, 0.56);
   --background-Fade: rgba(238, 238, 238, 0.668);
@@ -31,3 +31,22 @@ body {
   position: relative;
 }
 
+.errorBox {
+  background-color: rgba(192, 80, 80, 0.225);
+  color: rgb(253, 0, 0);
+  padding: 3px;
+  border-radius: 20px;
+  font-size: .9rem;
+  text-align: center;
+  line-height: 1;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #ccc;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+
+}
